@@ -18,9 +18,9 @@ const connect = function() {
   //   setTimeout(() => {
   //     conn.write("Move: up")
   // }, 5000);
-  //   setInterval(() => {
-  //   conn.write("Move: up")
-  // }, 50);
+    setInterval(() => {
+    conn.write("Move: up")
+  }, 50);
   });
   conn.on('data', (data) => {
     console.log(data.toString());
