@@ -14,7 +14,6 @@ const handleUserInput = (key) => {
   if (key === '\u0003') {
     process.exit();
   }
-
   switch (key) {
   case "w": {
     connection.write("Move: up");
@@ -32,6 +31,11 @@ const handleUserInput = (key) => {
     connection.write("Move: right");
     break;
   }
+  case "t": {
+    connection.write("Say: Hey Peeps!");
+    break;
+  }
+
   }
   //One way to fix this is to pass the conn object returned by connect() to the setUpInput function. In truth, this is not the most ideal solution, but it is simple and good enough for our purposes.
 
