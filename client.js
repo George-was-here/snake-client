@@ -13,6 +13,14 @@ const connect = function() {
   conn.on("connect", () => {
     console.log('Successfully connected');
     conn.write("Name: GTB");
+    // conn.write("Move: up");
+    // conn.write("Move: up");
+  //   setTimeout(() => {
+  //     conn.write("Move: up")
+  // }, 5000);
+  //   setInterval(() => {
+  //   conn.write("Move: up")
+  // }, 50);
   });
   conn.on('data', (data) => {
     console.log(data.toString());
